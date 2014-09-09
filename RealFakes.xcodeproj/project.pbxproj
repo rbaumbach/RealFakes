@@ -15,22 +15,8 @@
 		AF247D2019BDF44800AF94CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF247D1F19BDF44800AF94CE /* main.m */; };
 		AF247D2419BDF44800AF94CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF247D2319BDF44800AF94CE /* AppDelegate.m */; };
 		AF247D2619BDF44800AF94CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF247D2519BDF44800AF94CE /* Images.xcassets */; };
-		AF247D2D19BDF44800AF94CE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF247D2C19BDF44800AF94CE /* XCTest.framework */; };
-		AF247D2E19BDF44800AF94CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF247D1319BDF44700AF94CE /* Foundation.framework */; };
-		AF247D2F19BDF44800AF94CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF247D1719BDF44700AF94CE /* UIKit.framework */; };
-		AF247D3719BDF44800AF94CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF247D3519BDF44800AF94CE /* InfoPlist.strings */; };
-		AF247D3919BDF44800AF94CE /* RealFakesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF247D3819BDF44800AF94CE /* RealFakesTests.m */; };
+		AFF0F7B419BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF0F7B319BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AF247D3019BDF44800AF94CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF247D0819BDF44700AF94CE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AF247D0F19BDF44700AF94CE;
-			remoteInfo = RealFakes;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		53DCAF0959A74C1E8C63078B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,11 +32,9 @@
 		AF247D2219BDF44800AF94CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF247D2319BDF44800AF94CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AF247D2519BDF44800AF94CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AF247D2B19BDF44800AF94CE /* RealFakesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealFakesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF247D2C19BDF44800AF94CE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AF247D3419BDF44800AF94CE /* RealFakesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RealFakesTests-Info.plist"; sourceTree = "<group>"; };
-		AF247D3619BDF44800AF94CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AF247D3819BDF44800AF94CE /* RealFakesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealFakesTests.m; sourceTree = "<group>"; };
+		AFF0F7B119BDFB1D00FB2D8F /* RealFakes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RealFakes.h; path = Source/RealFakes.h; sourceTree = "<group>"; };
+		AFF0F7B219BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FakeAFHTTPSessionManager.h; path = Source/FakeAFHTTPSessionManager.h; sourceTree = "<group>"; };
+		AFF0F7B319BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FakeAFHTTPSessionManager.m; path = Source/FakeAFHTTPSessionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,16 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF247D2819BDF44800AF94CE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF247D2D19BDF44800AF94CE /* XCTest.framework in Frameworks */,
-				AF247D2F19BDF44800AF94CE /* UIKit.framework in Frameworks */,
-				AF247D2E19BDF44800AF94CE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				AF247D1919BDF44800AF94CE /* RealFakes */,
-				AF247D3219BDF44800AF94CE /* RealFakesTests */,
 				AF247D1219BDF44700AF94CE /* Frameworks */,
 				AF247D1119BDF44700AF94CE /* Products */,
 				768753C092FA471DAE598454 /* Pods.xcconfig */,
@@ -93,7 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				AF247D1019BDF44700AF94CE /* RealFakes.app */,
-				AF247D2B19BDF44800AF94CE /* RealFakesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,7 +76,6 @@
 				AF247D1319BDF44700AF94CE /* Foundation.framework */,
 				AF247D1519BDF44700AF94CE /* CoreGraphics.framework */,
 				AF247D1719BDF44700AF94CE /* UIKit.framework */,
-				AF247D2C19BDF44800AF94CE /* XCTest.framework */,
 				53DCAF0959A74C1E8C63078B /* libPods.a */,
 			);
 			name = Frameworks;
@@ -113,6 +84,9 @@
 		AF247D1919BDF44800AF94CE /* RealFakes */ = {
 			isa = PBXGroup;
 			children = (
+				AFF0F7B119BDFB1D00FB2D8F /* RealFakes.h */,
+				AFF0F7B219BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.h */,
+				AFF0F7B319BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.m */,
 				AFF0F7B019BDFA7600FB2D8F /* AppCode */,
 			);
 			path = RealFakes;
@@ -125,24 +99,6 @@
 				AF247D1C19BDF44800AF94CE /* InfoPlist.strings */,
 				AF247D1F19BDF44800AF94CE /* main.m */,
 				AF247D2119BDF44800AF94CE /* RealFakes-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AF247D3219BDF44800AF94CE /* RealFakesTests */ = {
-			isa = PBXGroup;
-			children = (
-				AF247D3819BDF44800AF94CE /* RealFakesTests.m */,
-				AF247D3319BDF44800AF94CE /* Supporting Files */,
-			);
-			path = RealFakesTests;
-			sourceTree = "<group>";
-		};
-		AF247D3319BDF44800AF94CE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AF247D3419BDF44800AF94CE /* RealFakesTests-Info.plist */,
-				AF247D3519BDF44800AF94CE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -180,24 +136,6 @@
 			productReference = AF247D1019BDF44700AF94CE /* RealFakes.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AF247D2A19BDF44800AF94CE /* RealFakesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AF247D3F19BDF44800AF94CE /* Build configuration list for PBXNativeTarget "RealFakesTests" */;
-			buildPhases = (
-				AF247D2719BDF44800AF94CE /* Sources */,
-				AF247D2819BDF44800AF94CE /* Frameworks */,
-				AF247D2919BDF44800AF94CE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AF247D3119BDF44800AF94CE /* PBXTargetDependency */,
-			);
-			name = RealFakesTests;
-			productName = RealFakesTests;
-			productReference = AF247D2B19BDF44800AF94CE /* RealFakesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,11 +144,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = RKB;
-				TargetAttributes = {
-					AF247D2A19BDF44800AF94CE = {
-						TestTargetID = AF247D0F19BDF44700AF94CE;
-					};
-				};
 			};
 			buildConfigurationList = AF247D0B19BDF44700AF94CE /* Build configuration list for PBXProject "RealFakes" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -225,7 +158,6 @@
 			projectRoot = "";
 			targets = (
 				AF247D0F19BDF44700AF94CE /* RealFakes */,
-				AF247D2A19BDF44800AF94CE /* RealFakesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,14 +169,6 @@
 			files = (
 				AF247D1E19BDF44800AF94CE /* InfoPlist.strings in Resources */,
 				AF247D2619BDF44800AF94CE /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AF247D2919BDF44800AF94CE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF247D3719BDF44800AF94CE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,40 +214,17 @@
 			files = (
 				AF247D2419BDF44800AF94CE /* AppDelegate.m in Sources */,
 				AF247D2019BDF44800AF94CE /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AF247D2719BDF44800AF94CE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF247D3919BDF44800AF94CE /* RealFakesTests.m in Sources */,
+				AFF0F7B419BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AF247D3119BDF44800AF94CE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AF247D0F19BDF44700AF94CE /* RealFakes */;
-			targetProxy = AF247D3019BDF44800AF94CE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AF247D1C19BDF44800AF94CE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AF247D1D19BDF44800AF94CE /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		AF247D3519BDF44800AF94CE /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF247D3619BDF44800AF94CE /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -431,46 +332,6 @@
 			};
 			name = Release;
 		};
-		AF247D4019BDF44800AF94CE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RealFakes.app/RealFakes";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RealFakes/RealFakes-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "RealFakesTests/RealFakesTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		AF247D4119BDF44800AF94CE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RealFakes.app/RealFakes";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RealFakes/RealFakes-Prefix.pch";
-				INFOPLIST_FILE = "RealFakesTests/RealFakesTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -488,15 +349,6 @@
 			buildConfigurations = (
 				AF247D3D19BDF44800AF94CE /* Debug */,
 				AF247D3E19BDF44800AF94CE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AF247D3F19BDF44800AF94CE /* Build configuration list for PBXNativeTarget "RealFakesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AF247D4019BDF44800AF94CE /* Debug */,
-				AF247D4119BDF44800AF94CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
