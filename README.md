@@ -1,4 +1,4 @@
-# RealFakes
+# RealFakes [![Build Status](https://travis-ci.org/rbaumbach/RealFakes.svg?branch=master)](https://travis-ci.org/rbaumbach/RealFakes)
 
 A Repo that contains "Real Fake" objects that can be used for testing iOS applications.
 
