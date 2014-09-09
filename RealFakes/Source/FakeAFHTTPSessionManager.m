@@ -36,6 +36,7 @@
                       success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                       failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
 {
+    self.getURLString = URLString;
     self.getParameters = parameters;
     self.getSuccessBlock = success;
     self.getFailureBlock = failure;
@@ -48,6 +49,7 @@
                        success:(void (^)(NSURLSessionDataTask *task))success
                        failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
 {
+    self.headURLString = URLString;
     self.headParameters = parameters;
     self.headSuccessBlock = success;
     self.headFailureBlock = failure;
@@ -61,6 +63,7 @@
                        success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                        failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
 {
+    self.postURLString = URLString;
     self.postParameters = parameters;
     self.postSuccessBlock = success;
     self.postFailureBlock = failure;
@@ -75,10 +78,11 @@
                        success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                        failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
 {
-    self.putWithMultipartFormDataParameters = parameters;
-    self.putWithMultipartFormDataBlock = block;
-    self.putWithMultipartFormDataSuccessBlock = success;
-    self.putWithMultipartFormDataFailureBlock = failure;
+    self.postWithMultipartFormDataURLString = URLString;
+    self.postWithMultipartFormDataParameters = parameters;
+    self.postWithMultipartFormDataBlock = block;
+    self.postWithMultipartFormDataSuccessBlock = success;
+    self.postWithMultipartFormDataFailureBlock = failure;
     
     return [[NSURLSessionDataTask alloc] init];
 
@@ -89,6 +93,7 @@
                       success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                       failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
 {
+    self.putURLString = URLString;
     self.putParameters = parameters;
     self.putSuccessBlock = success;
     self.putFailureBlock = failure;
@@ -102,6 +107,7 @@
                         success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                         failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
 {
+    self.patchURLString = URLString;
     self.patchParameters = parameters;
     self.patchSuccessBlock = success;
     self.patchFailureBlock = failure;
@@ -115,6 +121,7 @@
                          success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                          failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
 {
+    self.deleteURLString = URLString;
     self.deleteParameters = parameters;
     self.deleteSuccessBlock = success;
     self.deleteFailureBlock = failure;
