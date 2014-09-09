@@ -23,4 +23,4 @@ This project will contain all the fake objects that I use for testing.  Real Fak
 
 ## Real Fake Class List
 
-* AFNetworking/AFHTTPSessionManager.h
+* AFNetworking/AFHTTPSessionManager.h -> RealFakeAFHTTPSessionManager
