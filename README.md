@@ -8,6 +8,14 @@ This project will contain all the fake objects that I use for testing.  Real Fak
 
 ## Adding RealFakes to your project
 
+### Cocoapods
+
+[CocoaPods](http://cocoapods.org) is the recommended way to add RealFakes to your project.
+
+1.  Add RealFakes to your Podfile `pod 'RealFakes'`.
+2.  Install the pod(s) by running `pod install`.
+3.  Add RealFakes to your files using `#import <RealFakes/RealFakes.h>`.
+
 ### Clone from Github
 
 1.  Clone repository from github and copy files directly, or add it as a git submodule.
