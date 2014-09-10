@@ -15,6 +15,7 @@
 		AF247D2019BDF44800AF94CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF247D1F19BDF44800AF94CE /* main.m */; };
 		AF247D2419BDF44800AF94CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF247D2319BDF44800AF94CE /* AppDelegate.m */; };
 		AF247D2619BDF44800AF94CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF247D2519BDF44800AF94CE /* Images.xcassets */; };
+		AF889A7219C01ED700405094 /* FakeAFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF889A7119C01ED700405094 /* FakeAFHTTPRequestOperationManager.m */; };
 		AFF0F7B419BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF0F7B319BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.m */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,8 @@
 		AF247D2219BDF44800AF94CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF247D2319BDF44800AF94CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AF247D2519BDF44800AF94CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AF889A7019C01ED700405094 /* FakeAFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FakeAFHTTPRequestOperationManager.h; path = Source/FakeAFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		AF889A7119C01ED700405094 /* FakeAFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FakeAFHTTPRequestOperationManager.m; path = Source/FakeAFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
 		AFF0F7B119BDFB1D00FB2D8F /* RealFakes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RealFakes.h; path = Source/RealFakes.h; sourceTree = "<group>"; };
 		AFF0F7B219BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FakeAFHTTPSessionManager.h; path = Source/FakeAFHTTPSessionManager.h; sourceTree = "<group>"; };
 		AFF0F7B319BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FakeAFHTTPSessionManager.m; path = Source/FakeAFHTTPSessionManager.m; sourceTree = "<group>"; };
@@ -85,8 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				AFF0F7B119BDFB1D00FB2D8F /* RealFakes.h */,
-				AFF0F7B219BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.h */,
-				AFF0F7B319BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.m */,
+				AF889A7319C022BE00405094 /* AFNetworking */,
 				AFF0F7B019BDFA7600FB2D8F /* AppCode */,
 			);
 			path = RealFakes;
@@ -101,6 +103,17 @@
 				AF247D2119BDF44800AF94CE /* RealFakes-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF889A7319C022BE00405094 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				AFF0F7B219BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.h */,
+				AFF0F7B319BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.m */,
+				AF889A7019C01ED700405094 /* FakeAFHTTPRequestOperationManager.h */,
+				AF889A7119C01ED700405094 /* FakeAFHTTPRequestOperationManager.m */,
+			);
+			name = AFNetworking;
 			sourceTree = "<group>";
 		};
 		AFF0F7B019BDFA7600FB2D8F /* AppCode */ = {
@@ -213,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF247D2419BDF44800AF94CE /* AppDelegate.m in Sources */,
+				AF889A7219C01ED700405094 /* FakeAFHTTPRequestOperationManager.m in Sources */,
 				AF247D2019BDF44800AF94CE /* main.m in Sources */,
 				AFF0F7B419BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.m in Sources */,
 			);
