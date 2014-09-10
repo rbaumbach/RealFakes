@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'RealFakes'
-  s.version               = '0.0.2'
+  s.version               = '0.0.3'
   s.summary               = 'A Repo that contains "Real Fake" objects that can be used for testing iOS applications.'
   s.homepage              = 'https://github.com/rbaumbach/RealFakes'
   s.license               = { :type => 'MIT', :file => 'MIT.LICENSE' }
