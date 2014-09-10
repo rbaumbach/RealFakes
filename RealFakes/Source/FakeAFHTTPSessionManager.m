@@ -24,6 +24,8 @@
 
 @implementation FakeAFHTTPSessionManager
 
+#pragma mark - AFHTTPSessionManager
+
 - (instancetype)initWithBaseURL:(NSURL *)url
            sessionConfiguration:(NSURLSessionConfiguration *)configuration
 {
@@ -55,7 +57,6 @@
     self.headFailureBlock = failure;
     
     return [[NSURLSessionDataTask alloc] init];
-
 }
 
 - (NSURLSessionDataTask *)POST:(NSString *)URLString
@@ -69,7 +70,6 @@
     self.postFailureBlock = failure;
     
     return [[NSURLSessionDataTask alloc] init];
-
 }
 
 - (NSURLSessionDataTask *)POST:(NSString *)URLString
@@ -85,7 +85,6 @@
     self.postWithMultipartFormDataFailureBlock = failure;
     
     return [[NSURLSessionDataTask alloc] init];
-
 }
 
 - (NSURLSessionDataTask *)PUT:(NSString *)URLString
@@ -99,7 +98,6 @@
     self.putFailureBlock = failure;
     
     return [[NSURLSessionDataTask alloc] init];
-
 }
 
 - (NSURLSessionDataTask *)PATCH:(NSString *)URLString
@@ -113,7 +111,6 @@
     self.patchFailureBlock = failure;
     
     return [[NSURLSessionDataTask alloc] init];
-
 }
 
 - (NSURLSessionDataTask *)DELETE:(NSString *)URLString
@@ -127,7 +124,47 @@
     self.deleteFailureBlock = failure;
     
     return [[NSURLSessionDataTask alloc] init];
+}
 
+#pragma mark - Public Methods
+
+- (void)reset
+{
+    self.getURLString = nil;
+    self.getParameters = nil;
+    self.getSuccessBlock = nil;
+    self.getFailureBlock = nil;
+    
+    self.headURLString = nil;
+    self.headParameters = nil;
+    self.headSuccessBlock = nil;
+    self.headFailureBlock = nil;
+    
+    self.postURLString = nil;
+    self.postParameters = nil;
+    self.postSuccessBlock = nil;
+    self.postFailureBlock = nil;
+    
+    self.postWithMultipartFormDataURLString = nil;
+    self.postWithMultipartFormDataParameters = nil;
+    self.postWithMultipartFormDataBlock = nil;
+    self.postWithMultipartFormDataSuccessBlock = nil;
+    self.postWithMultipartFormDataFailureBlock = nil;
+    
+    self.putURLString = nil;
+    self.putParameters = nil;
+    self.putSuccessBlock = nil;
+    self.putFailureBlock = nil;
+    
+    self.patchURLString = nil;
+    self.patchParameters = nil;
+    self.patchSuccessBlock = nil;
+    self.patchFailureBlock = nil;
+    
+    self.deleteURLString = nil;
+    self.deleteParameters = nil;
+    self.deleteSuccessBlock = nil;
+    self.deleteFailureBlock = nil;
 }
 
 @end

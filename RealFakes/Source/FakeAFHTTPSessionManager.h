@@ -62,4 +62,6 @@
 @property (copy, nonatomic) void (^deleteSuccessBlock)(NSURLSessionDataTask *task, id responseObject);
 @property (copy, nonatomic) void (^deleteFailureBlock)(NSURLSessionDataTask *task, NSError *error);
 
+- (void)reset;
+
 @end
