@@ -10,29 +10,29 @@
 	<string>RealFakes</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5EE8AB07-A611-47E4-A0C2-98B5DC2A7DB4</key>
+		<key>0EDDCE42238FBD99AC3155B9DA234E3EB7F43F5D</key>
 		<string>ssh://github.com/rbaumbach/RealFakes.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>RealFakes.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5EE8AB07-A611-47E4-A0C2-98B5DC2A7DB4</key>
+		<key>0EDDCE42238FBD99AC3155B9DA234E3EB7F43F5D</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/rbaumbach/RealFakes.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5EE8AB07-A611-47E4-A0C2-98B5DC2A7DB4</string>
+	<string>0EDDCE42238FBD99AC3155B9DA234E3EB7F43F5D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5EE8AB07-A611-47E4-A0C2-98B5DC2A7DB4</string>
+			<string>0EDDCE42238FBD99AC3155B9DA234E3EB7F43F5D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>RealFakes</string>
 		</dict>

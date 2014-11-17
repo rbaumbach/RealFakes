@@ -16,12 +16,12 @@
 		AF247D2419BDF44800AF94CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF247D2319BDF44800AF94CE /* AppDelegate.m */; };
 		AF247D2619BDF44800AF94CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF247D2519BDF44800AF94CE /* Images.xcassets */; };
 		AF889A7219C01ED700405094 /* FakeAFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF889A7119C01ED700405094 /* FakeAFHTTPRequestOperationManager.m */; };
+		AFC3EBB11A18FC800089FEB4 /* FakeSimpleOAuth2AuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC3EBB01A18FC800089FEB4 /* FakeSimpleOAuth2AuthenticationManager.m */; };
 		AFF0F7B419BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF0F7B319BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		53DCAF0959A74C1E8C63078B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		768753C092FA471DAE598454 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		AF247D1019BDF44700AF94CE /* RealFakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealFakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF247D1319BDF44700AF94CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AF247D1519BDF44700AF94CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -35,9 +35,13 @@
 		AF247D2519BDF44800AF94CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AF889A7019C01ED700405094 /* FakeAFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FakeAFHTTPRequestOperationManager.h; path = Source/FakeAFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
 		AF889A7119C01ED700405094 /* FakeAFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FakeAFHTTPRequestOperationManager.m; path = Source/FakeAFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		AFC3EBAF1A18FC800089FEB4 /* FakeSimpleOAuth2AuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FakeSimpleOAuth2AuthenticationManager.h; path = Source/FakeSimpleOAuth2AuthenticationManager.h; sourceTree = "<group>"; };
+		AFC3EBB01A18FC800089FEB4 /* FakeSimpleOAuth2AuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FakeSimpleOAuth2AuthenticationManager.m; path = Source/FakeSimpleOAuth2AuthenticationManager.m; sourceTree = "<group>"; };
 		AFF0F7B119BDFB1D00FB2D8F /* RealFakes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RealFakes.h; path = Source/RealFakes.h; sourceTree = "<group>"; };
 		AFF0F7B219BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FakeAFHTTPSessionManager.h; path = Source/FakeAFHTTPSessionManager.h; sourceTree = "<group>"; };
 		AFF0F7B319BDFB5D00FB2D8F /* FakeAFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FakeAFHTTPSessionManager.m; path = Source/FakeAFHTTPSessionManager.m; sourceTree = "<group>"; };
+		C7EE1A5D7D7F9513813BC16C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F3279AD1E1E93C6130561F4C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77F704F1B44D13D4868D89F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7EE1A5D7D7F9513813BC16C /* Pods.debug.xcconfig */,
+				F3279AD1E1E93C6130561F4C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AF247D0719BDF44700AF94CE = {
 			isa = PBXGroup;
 			children = (
 				AF247D1919BDF44800AF94CE /* RealFakes */,
 				AF247D1219BDF44700AF94CE /* Frameworks */,
 				AF247D1119BDF44700AF94CE /* Products */,
-				768753C092FA471DAE598454 /* Pods.xcconfig */,
+				77F704F1B44D13D4868D89F4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				AFF0F7B119BDFB1D00FB2D8F /* RealFakes.h */,
+				AFC3EBAE1A18FB460089FEB4 /* SimpleOAuth2 */,
 				AF889A7319C022BE00405094 /* AFNetworking */,
 				AFF0F7B019BDFA7600FB2D8F /* AppCode */,
 			);
@@ -114,6 +128,15 @@
 				AF889A7119C01ED700405094 /* FakeAFHTTPRequestOperationManager.m */,
 			);
 			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+		AFC3EBAE1A18FB460089FEB4 /* SimpleOAuth2 */ = {
+			isa = PBXGroup;
+			children = (
+				AFC3EBAF1A18FC800089FEB4 /* FakeSimpleOAuth2AuthenticationManager.h */,
+				AFC3EBB01A18FC800089FEB4 /* FakeSimpleOAuth2AuthenticationManager.m */,
+			);
+			name = SimpleOAuth2;
 			sourceTree = "<group>";
 		};
 		AFF0F7B019BDFA7600FB2D8F /* AppCode */ = {
@@ -200,7 +223,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		89FE5B224C83473C959813A9 /* Check Pods Manifest.lock */ = {
@@ -225,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFC3EBB11A18FC800089FEB4 /* FakeSimpleOAuth2AuthenticationManager.m in Sources */,
 				AF247D2419BDF44800AF94CE /* AppDelegate.m in Sources */,
 				AF889A7219C01ED700405094 /* FakeAFHTTPRequestOperationManager.m in Sources */,
 				AF247D2019BDF44800AF94CE /* main.m in Sources */,
@@ -320,7 +344,7 @@
 		};
 		AF247D3D19BDF44800AF94CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 768753C092FA471DAE598454 /* Pods.xcconfig */;
+			baseConfigurationReference = C7EE1A5D7D7F9513813BC16C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -334,7 +358,7 @@
 		};
 		AF247D3E19BDF44800AF94CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 768753C092FA471DAE598454 /* Pods.xcconfig */;
+			baseConfigurationReference = F3279AD1E1E93C6130561F4C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

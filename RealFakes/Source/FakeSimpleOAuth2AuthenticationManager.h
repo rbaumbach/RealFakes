@@ -19,12 +19,15 @@
 //OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 //WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+#import "SimpleOAuth2AuthenticationManager.h"
 
-// AFNetworking
 
-#import "FakeAFHTTPSessionManager.h"
-#import "FakeAFHTTPRequestOperationManager.h"
+@interface FakeSimpleOAuth2AuthenticationManager : SimpleOAuth2AuthenticationManager
 
-// SimpleOAuth2
+@property (strong, nonatomic) NSURL *authURL;
+@property (strong, nonatomic) NSDictionary *tokenParametersDictionary;
+@property (strong, nonatomic) id<TokenParameters> tokenParameters;
+@property (copy, nonatomic) void (^success)(id authResponseObject);
+@property (copy, nonatomic) void (^failure)(NSError *error);
 
-#import "FakeSimpleOAuth2AuthenticationManager.h"
+@end
