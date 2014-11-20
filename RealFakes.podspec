@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version               = '0.0.4'
   s.summary               = 'A Repo that contains "Real Fake" objects that can be used for testing iOS applications.'
   s.homepage              = 'https://github.com/rbaumbach/RealFakes'
-  s.license               = { :type => 'MIT', :file => 'MIT.LICENSE' }
+  s.license               = { :type => 'MIT', :file => 'MIT-LICENSE.txt' }
   s.author                = { 'Ryan Baumbach' => 'rbaumbach.github@gmail.com' }
   s.source                = { :git => 'https://github.com/rbaumbach/RealFakes.git', :tag => s.version.to_s }
   s.requires_arc          = true
