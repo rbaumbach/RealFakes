@@ -25,3 +25,5 @@ This project will contain all the fake objects that I use for testing.  Real Fak
 
 * AFNetworking/AFHTTPSessionManager.h -> FakeAFHTTPSessionManager
 * AFNetworking/AFHTTPRequestOperationManager.h -> FakeAFHTTPRequestOperationManager
+
+* SimpleOAuth2AuthenticationManager -> FakeSimpleOAuth2AuthenticationManager
