@@ -1,5 +1,7 @@
 # RealFakes [![Build Status](https://travis-ci.org/rbaumbach/RealFakes.svg?branch=master)](https://travis-ci.org/rbaumbach/RealFakes)
 
+Note: This repo is being deprecated in favor of my current pod that contains wrappers, fakes and extensions in Swift.  [Check out Capsule](https://github.com/rbaumbach/Capsule)
+
 A Repo that contains "Real Fake" objects that can be used for testing iOS applications.
 
 ## Introduction
